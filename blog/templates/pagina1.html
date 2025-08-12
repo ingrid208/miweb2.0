@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Inicial</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    
+    <h1>Ultimos Posts</h1>
+    <p>Este es el contenido de la primera página.</p>
+    <nav>
+        <ul>
+            <li><a href="{% url 'index' %}">Página 1</a></li>
+            <li><a href="{% url 'blog_home' %}">Página 2</a></li>
+            <li><a href="{% url 'pagina2' %}">Página 3</a></li>
+             
+        </ul>
+
+       <ul>
+        <li>El gato con botas</li>
+        <li>Los tres chanchitos</li>
+        <li>cincuenta sombras</li>
+       </ul>
+    </nav>
+</body>
+</html>

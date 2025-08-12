@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Inicial</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    
+    <h1>Bienvenido a la Página2</h1>
+    <p>Este es el contenido de la primera página.</p>
+    <nav>
+        <ul>
+            <li><a href="{% url 'index' %}">Página 1</a></li>
+            <li><a href="{% url 'pagina1' %}">Página 2</a></li>
+            <li><a href="{% url 'pagina2' %}">Página 3</a></li>
+             
+        </ul>
+    </nav>
+</body>
+</html>
